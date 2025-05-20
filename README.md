@@ -12,7 +12,7 @@ A Vue 3 UI application is also included in order to allow users to upload via a 
 - ASP.NET Core API
 - EF Core
 - ~~SQLite~~ PostgreSQL database
-- OpenAPI & Swagger
+- OpenAPI & Swagger/Scalar
 - Vue 3
 - Copilot
 - xUnit
@@ -26,9 +26,10 @@ cd src/MeterReadings.Api
 dotnet run
 ```
 
-The API will, by default, start running on port `5025` at [`http://localhost:5025`]()
+The API will, by default, start running on port `5025` at [`http://localhost:5025`](http://localhost:5025)
 
-The Swagger UI can be viewed and tested at [`http://localhost:5025/swagger`]()
+The Swagger UI can be viewed and tested at [`http://localhost:5025/swagger`](http://localhost:5025/swagger)  
+Or if you prefer Scalar, then navigate to [`http://localhost:5025/scalar/v1`](http://localhost:5025/scalar/v1)
 
 ### UI
 
@@ -38,4 +39,4 @@ npm install
 npm run serve
 ```
 
-The UI will start running on port `8080` at [`http://localhost:8080/`]()
+The UI will start running on port `8080` at [`http://localhost:8080/`](http://localhost:8080/)

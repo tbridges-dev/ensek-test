@@ -1,6 +1,7 @@
 using MeterReadings.Api.Data;
 using MeterReadings.Api.Services;
 using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,6 +46,7 @@ using (var scope = app.Services.CreateScope())
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference();
     app.UseSwaggerUI(opt =>
     {
         opt.SwaggerEndpoint("/openapi/v1.json", "OpenAPI V1");
