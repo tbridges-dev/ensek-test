@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../MeterReadings.Api.Data/MeterReadings.Api.Data.csproj" />
+    <ProjectReference Include="../MeterReadings.Api.Mappings/MeterReadings.Api.Mappings.csproj" />
+    <ProjectReference Include="../MeterReadings.Api.Models/MeterReadings.Api.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+  </ItemGroup>
+
+</Project>
