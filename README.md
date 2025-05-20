@@ -40,3 +40,12 @@ npm run serve
 ```
 
 The UI will start running on port `8080` at [`http://localhost:8080/`](http://localhost:8080/)
+
+## Testing the Application
+
+### API
+
+```bash
+cd test/MeterReadings.Api.Tests
+dotnet test
+```
